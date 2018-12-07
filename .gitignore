@@ -1,0 +1,17 @@
+*.py[cod]
+*.conf
+*.ini
+*.log
+*.yaml
+*.prof
+*.cprof
+DB.py
+APP.py
+/.idea/
+.vscode/
+__pycache__/
+/deploy
+.pytest_cache/
+.vscode/
+Pipfile.lock
+
