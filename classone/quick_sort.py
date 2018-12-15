@@ -11,6 +11,10 @@
 
 改进快速排序 
 
+
+
+< x            ==x       > x 
+----------    ------    ----
  
 
 """
@@ -29,20 +33,19 @@ def partition(array, L, R):
     cur = L
 
     # 用这个值 作为划分  array[R]  作为划分point 进行划分
-    # num = array[R]
-
+    # 选数组的 最后一个位置 进行partition
     while cur < more:
         if array[cur] < array[R]:
             array[less + 1], array[cur] = array[cur], array[less + 1]
             cur = cur + 1
             less = less + 1
         elif array[cur] > array[R]:
-            pass
             array[more - 1], array[cur] = array[cur], array[more - 1]
             more = more - 1
         else:  # ==array[R]
             cur = cur + 1
 
+    # 这里为啥要交换,吧最后的一个位置（num） 和 array[more] 交换
     array[more], array[R] = array[R], array[more]
     return less + 1, more - 1
 
@@ -57,6 +60,6 @@ def quick_sort(array, low, high):
 
 if __name__ == '__main__':
     pass
-    mylists = [8, 10, 9, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 16, 5, 13, 26, 18, 2, 45, 34, 23, 1, 7, 3]
+    mylists = [8, 10, 9, 6, 4,4, 4, 16, 5, 4, 45, 34, 23, 1, 7, 3,4]
     quick_sort(mylists, 0, len(mylists) - 1)
     print(mylists)
