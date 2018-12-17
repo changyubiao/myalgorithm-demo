@@ -47,7 +47,7 @@ def heapify(arr, index, heap_size):
     调整堆的结构，使变成大顶堆
     :param arr:
     :param index:
-    :param heap_size:
+    :param heap_size: 堆的大小
     :return:
     """
     left = index * 2 + 1
@@ -131,13 +131,13 @@ if __name__ == '__main__':
 
 
 
+
+
+
     expect = list(range(1, 50))
 
 
     print(f"array == expect:{array == expect}")
-
-
-
 
 
 

@@ -69,20 +69,20 @@ def partition(array, L, R, num):
             array[less + 1], array[cur] = array[cur], array[less + 1]
             cur = cur + 1
             less = less + 1
-        elif array[cur] > num:
+        else:
+            # array[cur] > num:
             cur = cur + 1
-
     return less
 
 
 if __name__ == '__main__':
-    array = [1, 21, 34, 12, 4, 10, 5,10, 87, 10, 6,10, 17, 10, 14, 8, 14]
-    num = 10
-
+    array = [1, 21, 34, 12, 4, 10, 5, 10, 87, 10, 6, 10, 17, 10, 14, 8, 14]
+    num = 110
+    print(f"array:{array}")
     L = 0
-    R = len(array)-1
+    R = len(array) - 1
 
-    pos = partition1(array, L, R, num=num)
+    pos = partition(array, L, R, num=num)
 
     print(f"num:{num}, pos:{pos}, array[{pos}]:{array[pos]}")
     print(array)
