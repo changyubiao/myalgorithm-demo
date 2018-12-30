@@ -80,6 +80,14 @@ class MyStack:
 class MyQueue:
     """
     用两个栈结构 ,来实现队列结构
+
+
+    每次 只从 help  取数据
+
+    每次只从 push_stack  进入 数据.
+
+
+
     """
 
     def __init__(self):
@@ -91,6 +99,11 @@ class MyQueue:
     def put(self, item):
         """
         入队列
+
+
+        每次 入队列 一定要进 push_stack ,
+
+
         :param item:
         :return:
         """
@@ -100,6 +113,7 @@ class MyQueue:
     def get(self):
         """
         出队列
+        每次 出队列 从  help 取出数据.
         :return:
 
 
@@ -138,6 +152,23 @@ class MyQueue:
         :return:
         """
         return self._size
+
+    def dao(self):
+        """
+        倒数据 行为
+        一次全 导入完.
+
+        如果 help 不为空,一定不能倒入 数据....!!!!  直接return
+        :return:
+        """
+
+        if not self.help.is_empty():
+            return
+
+        while not self.push_stack.is_empty():
+            self.help.push(self.push_stack.pop())
+
+
 
 
 def test_mystack():
