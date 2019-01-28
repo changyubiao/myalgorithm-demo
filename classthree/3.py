@@ -59,7 +59,7 @@ class MyStack:
 
     def peek(self):
         """
-        取得栈顶元素
+        取得栈顶元素,不弹出栈
         :return:
         """
 
@@ -219,8 +219,14 @@ def test_myqueue():
     print(q.get())
     print(f"q.qsize():{q.qsize()}")
 
+    print(q.get())
+    print(q.get())
+
     pass
 
 
 if __name__ == '__main__':
+
+
+    test_myqueue()
     pass

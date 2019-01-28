@@ -10,6 +10,7 @@
 class Stack:
     """模拟栈
     Stack()    建立一个空的栈对象
+
     push()     把一个元素添加到栈的最顶层
     pop()      删除栈最顶层的元素，并返回这个元素
     peek()     返回最顶层的元素，并不删除它
@@ -20,7 +21,6 @@ class Stack:
 
     def __init__(self):
         self.items = []
-
         self._size = len(self.items)
 
     def print_stack(self):
