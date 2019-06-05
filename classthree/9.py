@@ -43,7 +43,6 @@ def find_targe(matrix, target):
     判断  target  是否 在 matrix
 
     返回  True  or  False
-
     :param matrix:
     :param target: int
     :return: True or False
