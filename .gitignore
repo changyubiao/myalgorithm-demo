@@ -15,3 +15,5 @@ __pycache__/
 .vscode/
 Pipfile.lock
 test_threading/*
+# virtual env
+venv/
