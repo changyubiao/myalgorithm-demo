@@ -4,15 +4,22 @@
    contain the root `toctree` directive.
 
 Welcome to algorithem-practice's  documentation!
-======================================================================================================
+=====================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    example
-
+   classone
+   classtwo
+   classthree
+   classfour
    leetcode
+
+
+
+
 
 
 Indices and tables

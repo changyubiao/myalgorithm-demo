@@ -89,7 +89,7 @@ class Solution2:
     def sortColors(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
-
+        三路 快速排序
 
         只扫描数组一遍, 完成排序
 
@@ -107,14 +107,12 @@ class Solution2:
         # nums [zero +1, i-1]  ==1
         i = 0
         while i < two:
-
             if nums[i] == 1:
                 i += 1
                 pass
             elif nums[i] == 2:
                 two = two - 1
                 nums[i], nums[two] = nums[two], nums[i]
-                pass
             else:
                 # nums[i] ==0 的情况
                 nums[zero + 1], nums[i] = nums[i], nums[zero + 1]
@@ -130,6 +128,5 @@ if __name__ == '__main__':
 
     s = Solution2()
     s.sortColors(nums)
-
     print(f"nums:{nums}")
     pass

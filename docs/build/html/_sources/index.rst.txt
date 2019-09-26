@@ -12,6 +12,8 @@ Welcome to algorithem-practice's  documentation!
 
    example
 
+   leetcode
+
 
 Indices and tables
 ==================
