@@ -17,3 +17,5 @@ Pipfile.lock
 test_threading/*
 # virtual env
 venv/
+*/cmake-build-debug/*
+*/.idea/*
