@@ -43,6 +43,10 @@ class Stack:
         return self.items.pop()
 
     def peek(self):
+        """
+        查看 栈顶元素
+        :return:
+        """
         if not self.is_empty():
             return self.items[len(self.items) - 1]
 
